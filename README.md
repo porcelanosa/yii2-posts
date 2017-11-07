@@ -16,12 +16,12 @@ Module for different type of post, like articles, news, blog post etc.
 Add module folder into 'common/modules/'
 ####2. Common config 
 Add to _'common/config/main.php'_ 
-```php 
-<?php
+```php
+ 
     ......
     'modules' => [
         'posts' => [
-            'class' => 'common\modules\posts\Module',
+            'class' => 'porcelanosa\posts\Module',
         ],
     ],
     ......
@@ -32,10 +32,10 @@ Add to _'backend/config/main.php_
 'module' => [
     ...
     'posts' => [
-        'class'  => 'common\modules\posts\Module',
+        'class'  => 'porcelanosa\modules\posts\Module',
             'controllerMap' => [
                 'cpposts' => [
-                    'class'     => 'common\modules\posts\controllers\AdminController',
+                    'class'     => 'porcelanosa\modules\posts\controllers\AdminController',
                     'as access' => [
                         'class' => \yii\filters\AccessControl::className(),
                         'rules' => [
@@ -55,7 +55,7 @@ If you rename CintrollerMap name from 'cpposts' you must rename _'modules/posts/
 ####4. Migration 
 Run migration
 ```
-yii migrate --migrationPath=@common/modules/posts/migrations
+yii migrate --migrationPath=@vendor/porcelanosa/modules/posts/migrations
 ```
 ####5. Routes 
 Add rules to UrlManager
