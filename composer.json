@@ -1,0 +1,21 @@
+{
+    "name": "porcelanosa/yii2-posts",
+    "description": "The module is mostly for the backend, but partly for the frontend too.",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "porcelanosa",
+            "email": "porcelanosam@yandex.ru"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "porcelanosa\\posts\\": ""
+        }
+    }
+}
