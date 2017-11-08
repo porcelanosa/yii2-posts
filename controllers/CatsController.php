@@ -3,12 +3,14 @@
     namespace porcelanosa\posts\controllers;
         
         use Yii;
-        use common\modules\posts\models\Postcats;
-        use common\modules\posts\models\search\PostcatsSearch;
+        use porcelanosa\posts\models\Postcats;
+        use porcelanosa\posts\models\search\PostcatsSearch;
 //use backend\controllers\BasebackendController;
         use yii\base\Controller;
         use yii\web\NotFoundHttpException;
+    
         use yii\filters\VerbFilter;
+        use yii\filters\AccessControl;
         
         /**
          * CatsController implements the CRUD actions for Postcats model.
@@ -21,7 +23,28 @@
             public function behaviors()
             {
                 return [
-                    'verbs' => [
+                    'access' => [
+                        'class' => AccessControl::className(),
+                        /*'ruleConfig' => [
+                            'class' => AccessRule::className(),
+                        ],*/
+                        'rules' => [
+                            [
+                                'actions' => ['login', 'error'],
+                                'allow'   => true,
+                            ],
+                            [
+                                'actions' => ['logout'],
+                                'allow'   => true,
+                                'roles'   => ['@'],
+                            ],
+                            [
+                                'allow'        => true,
+                                'roles' => [ 'administrator' ],
+                            ],
+                        ],
+                    ],
+                    'verbs'  => [
                         'class'   => VerbFilter::className(),
                         'actions' => [
                             'delete' => ['POST'],
@@ -81,14 +104,15 @@
             
             /**
              * Updates an existing Postcats model.
-             * If update is successful, the browser will be redirected to the 'view' page.
+             * If update is successful, the browser will be redirected to the 'update' page.
              *
              * @param integer $id
              *
              * @return mixed
              */
-            public function actionUpdate($id)
+            public function actionUpdate()
             {
+                $id = Yii::$app->request->get('id');
                 $model = $this->findModel($id);
                 
                 if ($model->load(Yii::$app->request->post()) && $model->save()) {

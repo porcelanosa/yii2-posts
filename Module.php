@@ -1,16 +1,24 @@
 <?php
     
     namespace porcelanosa\posts;
-    
+
     /**
-     * posts module definition class
+     * Class Module
+     *
+     * @var $image_url string
+     * @var $image_path_alias string
+     * @package porcelanosa\posts
      */
         class Module extends \yii\base\Module
         {
             /**
              * @inheritdoc
+             * @var $image_url string
              */
             public $controllerNamespace = 'porcelanosa\posts\controllers';
+            public $image_url = '/userfiles/images';
+            //public $image_path;
+            public $image_path_alias = '@frontend/userfiles/images';
             public $urlRules = [
                 // posts with post_types 'articles'
                 [
@@ -54,6 +62,7 @@
              */
             public function init()
             {
+                
                 parent::init();
                 
                 // custom initialization code goes here

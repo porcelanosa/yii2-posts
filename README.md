@@ -12,9 +12,9 @@ Module for different type of post, like articles, news, blog post etc.
         
 ## Installation
 
-####1. Copy module 
+#### 1. Copy module 
 Add module folder into 'common/modules/'
-####2. Common config 
+#### 2. Common config 
 Add to _'common/config/main.php'_ 
 ```php
  
@@ -26,16 +26,16 @@ Add to _'common/config/main.php'_
     ],
     ......
 ```
-####3. Backend config 
+#### 3. Backend config 
 Add to _'backend/config/main.php_
 ```php
 'module' => [
     ...
     'posts' => [
-        'class'  => 'porcelanosa\modules\posts\Module',
+        'class'  => 'porcelanosa\posts\Module',
             'controllerMap' => [
                 'cpposts' => [
-                    'class'     => 'porcelanosa\modules\posts\controllers\AdminController',
+                    'class'     => 'porcelanosa\posts\controllers\AdminController',
                     'as access' => [
                         'class' => \yii\filters\AccessControl::className(),
                         'rules' => [
@@ -52,12 +52,12 @@ Add to _'backend/config/main.php_
 ```
 If you rename CintrollerMap name from 'cpposts' you must rename _'modules/posts/views/cppost/'_ folder also.
 
-####4. Migration 
+#### 4. Migration 
 Run migration
 ```
-yii migrate --migrationPath=@vendor/porcelanosa/modules/posts/migrations
+yii migrate --migrationPath=@vendor/porcelanosa/yii2-posts/migrations
 ```
-####5. Routes 
+#### 5. Routes 
 Add rules to UrlManager
 For example,  
 ```php

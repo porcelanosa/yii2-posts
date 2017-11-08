@@ -6,7 +6,7 @@
      * Time: 13:16
      */
     
-    namespace common\components\traits;
+    namespace porcelanosa\posts\components\traits;
     
     
     use yii\db\ColumnSchemaBuilder;

@@ -8,10 +8,12 @@
     use porcelanosa\posts\components\behaviors\UploadBehavior;
     
     use porcelanosa\posts\components\helpers\ThumbHelper as Thumb;
-    use yii\helpers\Html;
+        use yii\helpers\FileHelper;
+        use yii\helpers\Html;
     use yii\helpers\Url;
+        use yii\web\UrlNormalizer;
     
-    /**
+        /**
      * This is the model class for table "posts".
      *
      * @property integer $id
@@ -31,8 +33,6 @@
      */
     class Posts extends \yii\db\ActiveRecord
     {
-    
-        const IMAGE_PATH = '/upload/postimage/';
         public $metas; // мета данные из post_meta
         
         public function behaviors()
@@ -41,7 +41,7 @@
                 'file' => [
                     'class'           => UploadBehavior::className(),
                     'attributeName'   => 'image',
-                    'savePath'        => '@userfiles/upload/postimage/',
+                    'savePath'        => Yii::$app->getModule('posts')->image_path_alias,//'@userfiles/upload/postimage/',
                     'generateNewName' => true,
                     'protectOldValue' => true,
                 ],
@@ -143,10 +143,10 @@
          */
         public function showThumb($width, $height, $upload_folder_alias = null)
         {
-            $upload_folder_alias = ($upload_folder_alias == null) ? Yii::getAlias('@userfiles') . self::IMAGE_PATH : $upload_folder_alias;
+            $upload_folder_alias = ($upload_folder_alias == null) ? FileHelper::normalizePath(Yii::$app->getModule('posts')->image_path_alias ) . DIRECTORY_SEPARATOR : $upload_folder_alias;
            
             if (
-                file_exists($upload_folder_alias . $this->image)
+                file_exists($upload_folder_alias. $this->image)
                 AND is_file($upload_folder_alias . $this->image)
                 AND $this->image != ''
             ) {

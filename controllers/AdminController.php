@@ -4,7 +4,7 @@
     
     //use backend\controllers\BasebackendController as Controller;
     use yii\web\Controller;
-    use cporcelanosa\posts\models\Postmeta;
+    use porcelanosa\posts\models\Postmeta;
     use porcelanosa\yii2togglecolumn\ToggleAction;
     use Yii;
     use porcelanosa\posts\models\Posts;

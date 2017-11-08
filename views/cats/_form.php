@@ -47,7 +47,7 @@
                 'editorOptions' => ElFinder::ckeditorOptions(
                     [
                         'elfinder',
-                        'path' => Yii::getAlias('@userfiles')
+                        'path' => Yii::getAlias('@frontend').Yii::$app->getModule('posts')->image_url
                     ],
                     [
                         'preset' => 'standart', //разработанны стандартные настройки basic, standard, full данную возможность не обязательно использовать

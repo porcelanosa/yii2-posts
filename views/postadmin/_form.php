@@ -59,7 +59,7 @@
                 'editorOptions' => ElFinder::ckeditorOptions(
                     [
                         'elfinder',
-                        'path' => Yii::getAlias('@userfiles')
+                        'path' => Yii::getAlias('@frontend').Yii::$app->getModule('posts')->image_url
                     ],
                     [
                         'preset' => 'standart', //разработанны стандартные настройки basic, standard, full данную возможность не обязательно использовать
@@ -93,6 +93,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <?
+                        echo  Yii::$app->getModule('posts')->image_path_alias. $model->image;
                         echo $model->showThumb(200, 200);
                     ?>
                     <?=$form->field( $model, 'image' )->fileInput( [ 'maxlength' => true ] )?>
