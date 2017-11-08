@@ -1,11 +1,11 @@
 <?php
 
-namespace common\modules\posts\models\search;
+namespace porcelanosa\posts\models\search;
 
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use common\modules\posts\models\Postcats;
+use porcelanosa\posts\models\Postcats;
 
 /**
  * PostcatsSearch represents the model behind the search form about `common\modules\posts\models\Postcats`.

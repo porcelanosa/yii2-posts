@@ -7,13 +7,13 @@
     use mihaildev\ckeditor\CKEditor;
     use mihaildev\elfinder\ElFinder;
     
-    use common\modules\posts\models\Posttypes;
-    use common\modules\posts\models\Postcats;
+    use porcelanosa\posts\models\Posttypes;
+    use porcelanosa\posts\models\Postcats;
     
     use \yii\helpers\ArrayHelper;
     
     /* @var $this yii\web\View */
-    /* @var $model common\modules\posts\models\Posts */
+    /* @var $model porcelanosa\posts\models\Posts */
     /* @var $form yii\widgets\ActiveForm */
 ?>
 

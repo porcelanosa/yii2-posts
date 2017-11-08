@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\widgets\Pjax;
 /* @var $this yii\web\View */
-/* @var $searchModel common\modules\posts\models\search\PosttypesSearch */
+/* @var $searchModel porcelanosa\posts\models\search\PosttypesSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = 'Posttypes';

@@ -1,5 +1,5 @@
 <?php
-	namespace common\components\behaviors;
+	namespace porcelanosa\posts\components\behaviors;
 	
 	use Yii;
 	use yii\base\Behavior;

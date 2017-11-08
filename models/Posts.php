@@ -1,13 +1,13 @@
 <?php
     
-    namespace common\modules\posts\models;
+    namespace porcelanosa\posts\models;
     
     use Yii;
     use yii\behaviors\TimestampBehavior;
     
-    use common\components\behaviors\UploadBehavior;
+    use porcelanosa\posts\components\behaviors\UploadBehavior;
     
-    use common\components\helpers\ThumbHelper as Thumb;
+    use porcelanosa\posts\components\helpers\ThumbHelper as Thumb;
     use yii\helpers\Html;
     use yii\helpers\Url;
     

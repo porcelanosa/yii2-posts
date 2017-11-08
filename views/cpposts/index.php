@@ -5,7 +5,7 @@
     use yii\widgets\Pjax;
     
     /* @var $this yii\web\View */
-    /* @var $searchModel common\modules\posts\models\search\PostsSearch */
+    /* @var $searchModel porcelanosa\posts\models\search\PostsSearch */
     /* @var $dataProvider yii\data\ActiveDataProvider */
     
     $this->title                   = 'Посты';

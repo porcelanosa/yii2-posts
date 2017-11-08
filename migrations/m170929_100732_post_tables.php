@@ -4,7 +4,7 @@
     
     class m170929_100732_post_tables extends Migration
     {
-        use common\components\traits\TextTypesTrait;
+        use porcelanosa\components\traits\TextTypesTrait;
         
         public function safeUp()
         {

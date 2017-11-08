@@ -4,7 +4,7 @@ use yii\helpers\Html;
 
 
 /* @var $this yii\web\View */
-/* @var $model common\models\Pages */
+/* @var $model porcelanosa\models\Posts */
 
 $this->title = 'Создание страницы';
 $this->params['breadcrumbs'][] = ['label' => 'Страницы', 'url' => ['index']];

@@ -1,6 +1,6 @@
 <?php
 
-namespace common\modules\posts\models;
+namespace porcelanosa\posts\models;
 
 use Yii;
 

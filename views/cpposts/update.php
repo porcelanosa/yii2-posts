@@ -3,7 +3,7 @@
 use yii\helpers\Html;
 
 /* @var $this yii\web\View */
-/* @var $model common\modules\posts\models\Posts */
+/* @var $model porcelanosa\posts\models\Posts */
 
 $this->title = 'Обновление публикации: ' . $model->title;
 $this->params['breadcrumbs'][] = ['label' => 'Публикации', 'url' => ['index']];

@@ -6,8 +6,8 @@
      * Time: 18:39
      */
     /**
-     * @var $post_type \common\modules\posts\models\Posttypes
-     * @var $post     \common\modules\posts\models\Posts
+     * @var $post_type porcelanosa\posts\models\Posttypes
+     * @var $post     porcelanosa\posts\models\Posts
      */
     
     use yii\helpers\Html;

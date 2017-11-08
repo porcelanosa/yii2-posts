@@ -1,14 +1,14 @@
 <?php
 
-namespace common\modules\posts\models\search;
+namespace porcelanosa\posts\models\search;
 
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use common\modules\posts\models\Posttypes;
+use porcelanosa\posts\models\Posttypes;
 
 /**
- * PosttypesSearch represents the model behind the search form about `common\modules\posts\models\Posttypes`.
+ * PosttypesSearch represents the model behind the search form about `porcelanosa\posts\models\Posttypes`.
  */
 class PosttypesSearch extends Posttypes
 {

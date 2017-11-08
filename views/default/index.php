@@ -1,7 +1,7 @@
 <?php
     /**
-     * @var $post_type \common\modules\posts\models\Posttypes
-     * @var $posts     \common\modules\posts\models\Posts[]
+     * @var $post_type porcelanosa\posts\models\Posttypes
+     * @var $posts     porcelanosa\posts\models\Posts[]
      */
     
     use yii\helpers\Html;

@@ -4,7 +4,7 @@ use yii\helpers\Html;
 
 
 /* @var $this yii\web\View */
-/* @var $model common\modules\posts\models\Posttypes */
+/* @var $model porcelanosa\posts\models\Posttypes */
 
 $this->title = 'Create Posttypes';
 $this->params['breadcrumbs'][] = ['label' => 'Posttypes', 'url' => ['index']];

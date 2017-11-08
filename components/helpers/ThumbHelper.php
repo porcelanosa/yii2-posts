@@ -1,5 +1,5 @@
 <?php
-namespace common\components\helpers;
+namespace porcelanosa\posts\components\helpers;
 use yii\helpers\FileHelper;
 use himiklab\thumbnail\EasyThumbnailImage;
 use yii\helpers\Html;
