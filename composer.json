@@ -14,7 +14,8 @@
         "yiisoft/yii2": "~2.0.0",
         "mihaildev/yii2-ckeditor": "*",
         "mihaildev/yii2-elfinder": "^1.0",
-        "kartik-v/yii2-widgets": "*"
+        "kartik-v/yii2-widgets": "*",
+        "porcelanosa/yii2-toggle-column": "dev-master"
     },
     "autoload": {
         "psr-4": {
