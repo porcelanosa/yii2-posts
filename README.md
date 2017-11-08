@@ -12,8 +12,10 @@ Module for different type of post, like articles, news, blog post etc.
         
 ## Installation
 
-#### 1. Copy module 
-Add module folder into 'common/modules/'
+#### 1. Run composer 
+```cmd
+composer require porcelanosa/yii2-posts
+```
 #### 2. Common config 
 Add to _'common/config/main.php'_ 
 ```php
