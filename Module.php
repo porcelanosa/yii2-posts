@@ -28,31 +28,31 @@
             public $urlPrefix = 'posts';
             public $urlRules = [
                 // posts with post_types 'articles'
-                /*[
+                [
                     'pattern'  => 'articles',
-                    'route'    => 'default/index',
+                    'route'    => 'posts/default/index',
                     'defaults' => ['post_type_slug' => 'articles'],
                 ],
                 [
                     'pattern'  => 'articles/<cat_slug>/<slug>',
-                    'route'    => 'default/view',
+                    'route'    => 'posts/default/view',
                     'defaults' => ['post_type_slug' => 'articles'],
                 ],
                 // posts with post_types 'news'
                 [
                     'pattern'  => 'news',
-                    'route'    => 'default/index',
+                    'route'    => 'posts/default/index',
                     'defaults' => ['post_type_slug' => 'news'],
                 ],
                 [
                     'pattern'  => 'news/<cat_slug>/<slug>',
-                    'route'    => 'default/view',
+                    'route'    => 'posts/default/view',
                     'defaults' => ['post_type_slug' => 'news'],
-                ],*/
+                ],
                 // Posts
-                'posts/<post_type_slug>/<cat_slug>/<slug>' => 'default/view',
-                'posts/<post_type_slug>/<cat_slug>'        => 'default/catview',
-                'posts/<post_type_slug>'                   => 'default/index',
+                'posts/<post_type_slug>/<cat_slug>/<slug>' => 'posts/default/view',
+                'posts/<post_type_slug>/<cat_slug>'        => 'posts/default/catview',
+                'posts/<post_type_slug>'                   => 'posts/default/index',
             ];
             
             /**

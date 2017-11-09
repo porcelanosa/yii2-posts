@@ -34,9 +34,12 @@
                         $configUrlRule['routePrefix'] = 'posts';
                     }
                     $configUrlRule['class'] = 'yii\web\GroupUrlRule';
-                    $rule                   = Yii::createObject($configUrlRule);
+                    $rule                   = Yii::createObject($configUrlRule);*/
                     
-                    $app->urlManager->addRules([$rule], false);*/
+                    //$app->urlManager->addRules([$rule], false);
+                    $app->getUrlManager()->addRules(
+                        $module->urlRules
+                    );
                     //$app->get('urlManager')->rules[] = new GroupUrlRule($configUrlRule);
                 }
             }
