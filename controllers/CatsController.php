@@ -6,7 +6,7 @@
         use porcelanosa\posts\models\Postcats;
         use porcelanosa\posts\models\search\PostcatsSearch;
 //use backend\controllers\BasebackendController;
-        use yii\base\Controller;
+        use yii\web\Controller;
         use yii\web\NotFoundHttpException;
     
         use yii\filters\VerbFilter;

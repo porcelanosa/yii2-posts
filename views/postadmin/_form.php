@@ -93,7 +93,6 @@
             <div class="row">
                 <div class="col-md-12">
                     <?
-                        echo  Yii::$app->getModule('posts')->image_path_alias. $model->image;
                         echo $model->showThumb(200, 200);
                     ?>
                     <?=$form->field( $model, 'image' )->fileInput( [ 'maxlength' => true ] )?>

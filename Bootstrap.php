@@ -1,6 +1,6 @@
 <?php
     
-    /*
+    /*  
      * This file is part of the Porcelanosa project.
      *
      * (c) Porcelanosa project <http://github.com/porcelanosa/>
@@ -24,13 +24,20 @@
             public function bootstrap($app)
             {
                 /** @var Module $module */
-                if ($app->hasModule('posts') && ($module = $app->getModule('posts')) instanceof Module) {
+                if ($app->hasModule('posts') && ($module = $app->getModule('posts')) instanceof Module/* && $app->id === 'app-frontend'*/) {
                     
-                    
+                    /*$configUrlRule          = [
+                        'prefix' => 'posts',
+                        'rules' => $module->urlRules,
+                    ];
+                    if ($module->urlPrefix != 'posts') {
+                        $configUrlRule['routePrefix'] = 'posts';
+                    }
                     $configUrlRule['class'] = 'yii\web\GroupUrlRule';
                     $rule                   = Yii::createObject($configUrlRule);
                     
-                    $app->urlManager->addRules([$rule], false);
+                    $app->urlManager->addRules([$rule], false);*/
+                    //$app->get('urlManager')->rules[] = new GroupUrlRule($configUrlRule);
                 }
             }
             

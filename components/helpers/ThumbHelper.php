@@ -23,7 +23,7 @@
              *
              * @return string
              */
-            public static function thumbnailImg($filename, $width, $height, $mode = self::THUMBNAIL_OUTBOUND, $options = [], $quality = null)
+            public static function thumbnailImg($filename, $width, $height, $mode = self::THUMBNAIL_OUTBOUND, $options = [], $quality = null, $checkRemFileMode = self::CHECK_REM_MODE_NONE)
             {
                 $filename = FileHelper::normalizePath(Yii::getAlias($filename));
                 try {

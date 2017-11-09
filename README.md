@@ -101,3 +101,10 @@ For example,
 ],
 ```
 or different for route to _'posts/default/view'_
+
+#### 6. Add module to bootstrap
+Add 
+```cmd
+'bootstrap'           => ['posts'],
+```
+to common/config/main.php
