@@ -8,7 +8,7 @@ Module for different type of post, like articles, news, blog post etc.
     use mihaildev\elfinder\ElFinder;
     
 ```
-	"porcelanosa/yii2-toggle-column": "dev-master",
+	"porcelanosa/yii2-toggle-column": "*",
         
 ## Installation
 
