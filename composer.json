@@ -13,10 +13,10 @@
     "require": {
         "yiisoft/yii2": "~2.0.0",
         "mihaildev/yii2-ckeditor": "*",
-        "mihaildev/yii2-elfinder": "^1.0",
+        "mihaildev/yii2-elfinder": "*",
         "kartik-v/yii2-widgets": "*",
         "himiklab/yii2-easy-thumbnail-image-helper" : "*",
-        "porcelanosa/yii2-toggle-column": "dev-master"
+        "porcelanosa/yii2-toggle-column": "*"
     },
     "autoload": {
         "psr-4": {
